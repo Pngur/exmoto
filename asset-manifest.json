@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/exmoto/static/css/main.f2291842.chunk.css",
-    "main.js": "/exmoto/static/js/main.2428ad28.chunk.js",
-    "main.js.map": "/exmoto/static/js/main.2428ad28.chunk.js.map",
+    "main.js": "/exmoto/static/js/main.090f4ec4.chunk.js",
+    "main.js.map": "/exmoto/static/js/main.090f4ec4.chunk.js.map",
     "runtime-main.js": "/exmoto/static/js/runtime-main.196dadfb.js",
     "runtime-main.js.map": "/exmoto/static/js/runtime-main.196dadfb.js.map",
     "static/js/2.31682806.chunk.js": "/exmoto/static/js/2.31682806.chunk.js",
     "static/js/2.31682806.chunk.js.map": "/exmoto/static/js/2.31682806.chunk.js.map",
     "index.html": "/exmoto/index.html",
-    "precache-manifest.2b1503a9670cc3c743e4bffe99be5d56.js": "/exmoto/precache-manifest.2b1503a9670cc3c743e4bffe99be5d56.js",
+    "precache-manifest.c379d18c9cf898fef91f06a137b1467c.js": "/exmoto/precache-manifest.c379d18c9cf898fef91f06a137b1467c.js",
     "service-worker.js": "/exmoto/service-worker.js",
     "static/css/main.f2291842.chunk.css.map": "/exmoto/static/css/main.f2291842.chunk.css.map",
     "static/js/2.31682806.chunk.js.LICENSE.txt": "/exmoto/static/js/2.31682806.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.196dadfb.js",
     "static/js/2.31682806.chunk.js",
     "static/css/main.f2291842.chunk.css",
-    "static/js/main.2428ad28.chunk.js"
+    "static/js/main.090f4ec4.chunk.js"
   ]
 }
