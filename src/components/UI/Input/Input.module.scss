@@ -1,0 +1,24 @@
+@import './../../../styles/colors.scss';
+
+.Form-Input {
+   background-color: $color-grey-light;
+   border: none;
+   border-radius: .3rem;
+   padding: 1rem 2rem;
+   font-size: 1.4rem;
+   outline: none;
+   cursor: pointer;
+   width: 100%;
+   &::placeholder {color: $color-grey;}
+   &:disabled {
+      background-color: darkgrey;
+      cursor: not-allowed;
+   }
+}
+
+.Auth-Form-Input {
+   width: 100%;
+   padding: .5rem;
+   font-size: 1.5rem;
+   border-radius: .3rem;
+}

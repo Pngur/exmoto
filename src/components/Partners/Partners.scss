@@ -1,0 +1,19 @@
+@import './../../styles/container.scss';
+@import './../../styles/colors.scss';
+
+.Partners {
+   margin-top: 5rem;
+   &__Header {
+      font-size: 4rem;
+      text-align: center;
+      color: $color-green-dark;
+   }
+}
+
+.Partners-Box {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3rem;
+}

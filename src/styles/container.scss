@@ -1,0 +1,10 @@
+@import './../styles/mixins.scss';
+
+.Container {
+   max-width: 120rem;
+   padding: 0 1.5rem;
+   margin: 0 auto;
+   // @include respond(bp4) {
+   //    padding: 0 .5rem;
+   // }
+}

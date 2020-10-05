@@ -1,0 +1,14 @@
+.Logo-box {
+   width: 25rem;
+   height: auto;
+
+   &__Image {
+      width: 100%;
+      height: auto;
+      
+      &:hover {
+         transition: transform 1s;
+         transform: translateX(10%);
+      }
+   }
+}

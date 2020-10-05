@@ -1,0 +1,7 @@
+@import './../../styles/mixins.scss';
+.Main {
+   margin-top: 13rem;
+   @include respond(bp4) {
+      margin-top: 18rem;
+   }
+}

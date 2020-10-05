@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import './App.scss';
+import axios from './axios-order';
+import Layout from './components/Layout/Layout';
+import AdminPanel from './../src/containers/AdminPanel/AdminPanel';
+import Auth from './components/Auth/Auth';
+import { AuthContext } from './components/context/Auth-Context';
+
+const App = () => {
+  axios.interceptors.request.use(req => {
+    const token = sessionStorage.getItem('access__token');    
+    if(!token) {return req;}  
+    req.headers.Authorization = `Bearer ${token}`;
+    return req;
+  });
+
+  const authContext = useContext(AuthContext); 
+  const token = sessionStorage.getItem('access__token');   
+  let authAdmin = <Auth/> ;
+  if (authContext.isAuth || token) authAdmin = <AdminPanel/>;
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/operator/" >
+            {authAdmin}
+          </Route>
+          <Route path="/" component={Layout}/>
+        </Switch>  
+      </Router>
     </div>
   );
 }

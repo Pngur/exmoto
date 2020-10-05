@@ -1,0 +1,11 @@
+@import '../../styles/container.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
+
+.Slider {
+   overflow: hidden;
+   position: relative;
+   // margin-top: 4rem;
+}
+
+.Slider-Box {display: flex;}
