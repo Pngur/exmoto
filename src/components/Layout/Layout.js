@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import './Layout.scss';
 import Toolbar from '../Header/Toolbar/Toolbar';
@@ -13,11 +13,15 @@ const Layout = props => {
       <>
          <Toolbar/>
             <main className="Main">
-               <Route exact path={'/'} >
-                  <Slider/>
-                  <Partners/>
-               </Route> 
-               <Route path={'/pricelist'}  component={PricePage}/> 
+               <Switch>
+                  <Route path={'/price'} >
+                     <PricePage/>
+                  </Route>
+                  <Route path={'/'}>
+                     <Slider/>
+                     <Partners/>
+                  </Route>
+               </Switch>
             </main>
          <Footer/>
       </>

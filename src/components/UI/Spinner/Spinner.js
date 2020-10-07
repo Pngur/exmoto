@@ -1,7 +1,7 @@
 import React from 'react';
 import './Spinner.scss';
 
-const Spinner = props => (
+export const SpinnerCirle = () => (
       <div className="lds-spinner">
          <div></div>
          <div></div>
@@ -18,4 +18,6 @@ const Spinner = props => (
       </div>
 );
 
-export default Spinner;
+export const SpinnerLine = () => (
+      <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+);

@@ -4,19 +4,15 @@
 .OrderSummary {
    &__List {
       width: 100rem;
-      @include respond(bp5) {
-         width: 85rem;
-      }
-      @include respond(bp6) {
-         width: 75rem;
-      }
-      @include respond(bp2) {
-         width: 65rem;
-      }
-      @include respond(bp7) {
+      @include respond(bp2) {width: 65rem;}
+      @include respond(bp5) {width: 85rem;}
+      @include respond(bp6) {width: 75rem;}
+      @include respond(bp11) {
          display: flex;
          align-items: center;
          justify-content: center;
+         width: 25rem;
+         height: 40rem;
       }
    }
 
@@ -25,8 +21,11 @@
       align-items: center;
       justify-content: center;
       height: 7rem;
-      @include respond(bp7) {
+      @include respond(bp11) {
          flex-direction: column;
+         height: 100%;
+         width: 100%;
+         padding-top: 1rem;
       }
    }
 
@@ -38,12 +37,11 @@
       letter-spacing: .1rem;
       
       & > *:last-child {
-         padding-right: 1rem;
+         padding-right: 0rem;
       }
-      @include respond(bp7) {
+      @include respond(bp11) {
          border-top-right-radius: 0px;
-         border-top-left-radius: 0px;
-         padding-top: .6rem;
+         border-bottom-left-radius: 5px;
          width: 15rem;
          align-items: flex-start;
          padding-left: 1rem;
@@ -58,10 +56,11 @@
       & > *:last-child {
          padding-right: 2rem;
       }
-      @include respond(bp7) {
-         border-bottom-right-radius: 0px;
+      @include respond(bp11) {
          border-bottom-left-radius: 0px;
+         border-top-right-radius: 5px;
          width: 15rem;
+         padding-right: 0rem;
       }
    }
 

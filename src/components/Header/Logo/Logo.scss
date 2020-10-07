@@ -5,10 +5,5 @@
    &__Image {
       width: 100%;
       height: auto;
-      
-      &:hover {
-         transition: transform 1s;
-         transform: translateX(10%);
-      }
    }
 }

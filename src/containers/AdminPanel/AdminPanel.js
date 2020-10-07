@@ -6,7 +6,7 @@ import Form from './../../components/UI/Form/Form';
 import Button from './../../components/UI/Button/Button';
 import Popup from './../../components/UI/PopUp/Popup';
 import Modal from './../../components/UI/Modal/Modal';
-import Spinner from './../../components/UI/Spinner/Spinner';
+import { SpinnerCirle } from './../../components/UI/Spinner/Spinner';
 import CreateInvoice from './../../components/AdminPanel/CreateInvoice/CreateInvoice';
 import EditInvoice from './../../components/AdminPanel/EditInvoice/EditInvoice';
 import { getEpochTime, createInputConfig, epochToDate } from './../../helper/helper';
@@ -430,7 +430,7 @@ const AdminPanel = props => {
                      />
                   </Form>
                   <div className="Search__Result-Box">
-                     {searchState.showSpinner ? <Spinner/> : 
+                     {searchState.showSpinner ? <SpinnerCirle/> : 
                      <div className={searchState.showSearchResults ? "Search__Results Search__Results--Active " : "Search__Results"} >
                         <p className="Search__TrackID"><span className="Search__Span">Накладная:</span> {searchState.searchResult.trackingNumber}</p>
                         <div className="Search__Settings">

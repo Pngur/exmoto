@@ -8,7 +8,10 @@ import Dots from './../../components/UI/Dots/Dots';
 const Slider = () => {
    const [position, setPosition] = useState({pSlide: 0});
    const [curSlide, setSlides] = useState({curSlide: 0, trans: true});
-   const [contWidth, setcontWidth] = useState();
+   const [contWidth, setcontWidth] = useState({
+      width: '',
+      fillPercent: '50'
+   });
    const [dots, setDots] = useState({dotsCount: [1,2,3], dotStatus: {0: true}});
    const [slids] = useState([
       {
@@ -31,7 +34,7 @@ const Slider = () => {
       }, 
 
    ]);
-   const slider = useRef(null);
+   const sliderWidth = useRef(null);
 
    // Меняем слайды по клику на Доты
    const changeSlideHandler = useCallback(arg => {
@@ -40,14 +43,14 @@ const Slider = () => {
       let dotStatus = {};
 
       switch(true) {
-         case(curSlide.curSlide === 3 &&  currrentSlide === 0):
+         case(curSlide.curSlide === 2 &&  currrentSlide === 0):
             dotStatus[arg] = true;
-            currrentSlide = 4;
-            posy = -contWidth * 4;
+            currrentSlide = 3;
+            posy = -contWidth.width * 3;
             break;
          case(dots.dotsCount[arg] !== undefined ):
             dotStatus[arg] = true;
-            posy = -contWidth * arg;
+            posy = -contWidth.width * arg;
             break;
          default:
             dotStatus[arg] = true;
@@ -56,35 +59,37 @@ const Slider = () => {
       setSlides({curSlide: currrentSlide, trans: true });
       setDots(prevState => {return {dotsCount: prevState.dotsCount, dotStatus: dotStatus}})
       setPosition({pSlide: posy});
-   }, [curSlide, contWidth, dots.dotsCount]);
+   }, [curSlide, contWidth.width, dots.dotsCount]);
 
    // Обнуляем transition после того как покажется последний слайд
    const updateTransiotionHandler = () => {
-      if (curSlide.curSlide === slider.current.children.length-1 ) {
+      if (curSlide.curSlide === sliderWidth.current.children.length-1 ) {
          setSlides({curSlide: 0, trans: false});
          setPosition({pSlide: 0});
       }
    } 
-
    // Узнаем ширину бокса в котором показываются слайды
    useEffect(() => { 
-      setcontWidth(slider.current.offsetWidth / 10);
-   }, [changeSlideHandler]);
-
+      if (sliderWidth.current.offsetWidth < 700) {
+         setcontWidth({width: sliderWidth.current.offsetWidth, fillPercent: '100'});
+      } else {
+         setcontWidth({width: sliderWidth.current.offsetWidth});
+      }
+   }, []);
    // Рендерим слайды
-   const allslids = slids.map(slide => <SliderImage key={slide.id} bgimage={slide.img} heading={slide.heading} text={slide.text}/>);  
+   const allslids = slids.map(slide => <SliderImage key={slide.id} bgimage={slide.img} heading={slide.heading} text={slide.text} percent={contWidth.fillPercent}/>);  
    
    return (
       <div className="Container">
          <div className="Slider" >
-            <div className="Slider-Box" onTransitionEnd={updateTransiotionHandler} ref={slider} style={{transform: `translateX(${position.pSlide}rem)`, transition: curSlide.trans ? "all 1s" : "none" }}>
+            <div className="Slider-Box" onTransitionEnd={updateTransiotionHandler} ref={sliderWidth} style={{WebkitTransform: `translateX(${position.pSlide}px)`, transition: curSlide.trans ? "all 1s" : "none" }}>
                {allslids}
                <SliderImage 
                   key='clone-slide'
                   bgimage={slids[0].img}
                   heading={slids[0].heading} 
                   text={slids[0].text}
-                  contWidth={contWidth}
+                  percent={contWidth.fillPercent}
                />
             </div>
                <Dots 

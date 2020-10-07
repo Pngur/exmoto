@@ -3,7 +3,7 @@
 @import './../../../styles/mixins.scss';
 
 .SliderImage {
-   background-size: 100%;
+   background-size: cover;
    background-position-y: 79%;
    background-repeat: no-repeat;
    height: 50rem;
@@ -12,13 +12,19 @@
    position: relative;
 
    &__Box {
-      max-width: 50%;
+      max-width: 40%;
       padding: 8rem 0 0 5rem;
-      @include respond(bp10) {
-         max-width: 100%;
-         text-align: center;
-         padding: 8rem 0 0 0rem;
+      @include respond(bp2) {
+         max-width: 40%;
       }
+      
+      @include respond(bp3) {
+         text-align: center;
+         max-width: 80%;
+         padding: 8rem 0 0 0rem;
+         margin: 0 auto;
+      }
+      
    }
 
    &__Span {
@@ -33,6 +39,10 @@
       font-weight:900;
       margin-bottom: 3rem;
       text-transform: uppercase;
+
+      @include respond(bp2) {
+         font-size: 4.5rem;
+      }
    }
 
    &__Paragraph {
@@ -40,5 +50,8 @@
       font-weight: 400;
       color: #222;
       line-height: 1.7;
+      @include respond(bp2) {
+         font-size: 2rem;
+      }
    }
 }

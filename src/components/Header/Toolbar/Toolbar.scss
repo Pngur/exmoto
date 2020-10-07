@@ -14,19 +14,38 @@
 }
 
 .Toolbar-Box {
-   @include flexbox;
-   align-items: center;
-   justify-content: space-between;
-   margin: 1rem 0;
-   position: relative;
+   display: flex;
+   flex-direction: column;
 
-   @include respond(bp4) {
-      flex-direction: column;
-      justify-content: center;
-
-      & > *:first-child {
-         margin-bottom: 1rem;
+   &__Top-Row {
+      @include flexbox;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0 .1rem 0;
+      position: relative;
+   
+      &__Price {
+         @include respond(bp11) {display: none;}
       }
+
+      @include respond(bp4) {
+         flex-direction: column;
+         justify-content: center;
+         & > *:first-child {margin-bottom: 1rem;}
+      }
+   }
+
+   &__Line {
+      width: 110rem;
+      height: .1rem;
+      background-color: #222;
+      margin:0 auto;
+   }
+   &__Bottom-Row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 5rem;
    }
 }
 

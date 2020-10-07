@@ -23,7 +23,7 @@ const Footer = () => (
                </div> 
             </div>
             <div className="Footer-Box__Rates">
-               <NavLink to="/pricelist">
+               <NavLink to="/price">
                   <Button btnStyle='Button__White'>ПРАЙС-ЛИСТ</Button>
                </NavLink>
             </div>

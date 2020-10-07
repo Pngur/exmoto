@@ -10,7 +10,7 @@ breakpoint-7: 43.75em  - 700px
 breakpoint-8:  33.75em   - 500px
 breakpoint-9: 68.75em   - 1100px
 breakpoint-10: 37.5em   - 600px
-
+breakpoint-11: 47.93em     - 767px
 
 
 breakpoint-1:  81.25em     - 1300px
@@ -55,6 +55,9 @@ breakpoint-10:  65.62em     - 1050px
    }
    @if $breakpoint == bp10 {
        @media (max-width: 37.5em) { @content; }
+   }
+   @if $breakpoint == bp11 {
+       @media (max-width: 47.93em) { @content; }
    }
 }
 
