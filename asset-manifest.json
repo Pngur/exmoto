@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/exmoto/static/css/main.d479d5fe.chunk.css",
-    "main.js": "/exmoto/static/js/main.1088e291.chunk.js",
-    "main.js.map": "/exmoto/static/js/main.1088e291.chunk.js.map",
+    "main.css": "/exmoto/static/css/main.268f0572.chunk.css",
+    "main.js": "/exmoto/static/js/main.a92d8f7a.chunk.js",
+    "main.js.map": "/exmoto/static/js/main.a92d8f7a.chunk.js.map",
     "runtime-main.js": "/exmoto/static/js/runtime-main.196dadfb.js",
     "runtime-main.js.map": "/exmoto/static/js/runtime-main.196dadfb.js.map",
     "static/js/2.00fb5758.chunk.js": "/exmoto/static/js/2.00fb5758.chunk.js",
     "static/js/2.00fb5758.chunk.js.map": "/exmoto/static/js/2.00fb5758.chunk.js.map",
     "index.html": "/exmoto/index.html",
-    "precache-manifest.ce2a022ab5b268cb84a732169627470c.js": "/exmoto/precache-manifest.ce2a022ab5b268cb84a732169627470c.js",
+    "precache-manifest.55efb969868ef84fc079a40ab19b820e.js": "/exmoto/precache-manifest.55efb969868ef84fc079a40ab19b820e.js",
     "service-worker.js": "/exmoto/service-worker.js",
-    "static/css/main.d479d5fe.chunk.css.map": "/exmoto/static/css/main.d479d5fe.chunk.css.map",
+    "static/css/main.268f0572.chunk.css.map": "/exmoto/static/css/main.268f0572.chunk.css.map",
     "static/js/2.00fb5758.chunk.js.LICENSE.txt": "/exmoto/static/js/2.00fb5758.chunk.js.LICENSE.txt",
     "static/media/b2b.jpg": "/exmoto/static/media/b2b.39db7eb1.jpg",
     "static/media/box.jpg": "/exmoto/static/media/box.0e601bd8.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.196dadfb.js",
     "static/js/2.00fb5758.chunk.js",
-    "static/css/main.d479d5fe.chunk.css",
-    "static/js/main.1088e291.chunk.js"
+    "static/css/main.268f0572.chunk.css",
+    "static/js/main.a92d8f7a.chunk.js"
   ]
 }
