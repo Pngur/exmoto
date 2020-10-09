@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/exmoto/static/css/main.1949d29e.chunk.css",
-    "main.js": "/exmoto/static/js/main.0f90b135.chunk.js",
-    "main.js.map": "/exmoto/static/js/main.0f90b135.chunk.js.map",
+    "main.css": "/exmoto/static/css/main.ba41b391.chunk.css",
+    "main.js": "/exmoto/static/js/main.1088e291.chunk.js",
+    "main.js.map": "/exmoto/static/js/main.1088e291.chunk.js.map",
     "runtime-main.js": "/exmoto/static/js/runtime-main.196dadfb.js",
     "runtime-main.js.map": "/exmoto/static/js/runtime-main.196dadfb.js.map",
-    "static/js/2.7c665434.chunk.js": "/exmoto/static/js/2.7c665434.chunk.js",
-    "static/js/2.7c665434.chunk.js.map": "/exmoto/static/js/2.7c665434.chunk.js.map",
+    "static/js/2.00fb5758.chunk.js": "/exmoto/static/js/2.00fb5758.chunk.js",
+    "static/js/2.00fb5758.chunk.js.map": "/exmoto/static/js/2.00fb5758.chunk.js.map",
     "index.html": "/exmoto/index.html",
-    "precache-manifest.9b62942654a472047d52ad6f34ec7fc6.js": "/exmoto/precache-manifest.9b62942654a472047d52ad6f34ec7fc6.js",
+    "precache-manifest.6f475c1cfb5b82f82fa9152aee1ca646.js": "/exmoto/precache-manifest.6f475c1cfb5b82f82fa9152aee1ca646.js",
     "service-worker.js": "/exmoto/service-worker.js",
-    "static/css/main.1949d29e.chunk.css.map": "/exmoto/static/css/main.1949d29e.chunk.css.map",
-    "static/js/2.7c665434.chunk.js.LICENSE.txt": "/exmoto/static/js/2.7c665434.chunk.js.LICENSE.txt",
+    "static/css/main.ba41b391.chunk.css.map": "/exmoto/static/css/main.ba41b391.chunk.css.map",
+    "static/js/2.00fb5758.chunk.js.LICENSE.txt": "/exmoto/static/js/2.00fb5758.chunk.js.LICENSE.txt",
     "static/media/b2b.jpg": "/exmoto/static/media/b2b.39db7eb1.jpg",
     "static/media/box.jpg": "/exmoto/static/media/box.0e601bd8.jpg",
     "static/media/checked.png": "/exmoto/static/media/checked.da188ccb.png",
+    "static/media/curier.svg": "/exmoto/static/media/curier.4d1a5931.svg",
+    "static/media/envelope.svg": "/exmoto/static/media/envelope.a093ba1f.svg",
     "static/media/main-logo.png": "/exmoto/static/media/main-logo.a5230cd6.png",
+    "static/media/Button.module.scss": "/exmoto/static/media/search.6d2646fa.svg",
     "static/media/truck.jpg": "/exmoto/static/media/truck.9e2e6db0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.196dadfb.js",
-    "static/js/2.7c665434.chunk.js",
-    "static/css/main.1949d29e.chunk.css",
-    "static/js/main.0f90b135.chunk.js"
+    "static/js/2.00fb5758.chunk.js",
+    "static/css/main.ba41b391.chunk.css",
+    "static/js/main.1088e291.chunk.js"
   ]
 }
