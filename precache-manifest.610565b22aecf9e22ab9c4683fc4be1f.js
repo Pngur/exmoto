@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7b6a4e7c0b5aa0c7035c71328d6b7af",
+    "revision": "b62c75d42f7864ae9f0c159f1a8cb0a4",
     "url": "/exmoto/index.html"
   },
   {
-    "revision": "90d9595b8e722a389da8",
-    "url": "/exmoto/static/css/main.522118dd.chunk.css"
+    "revision": "4ed54c90e087ee2bfe88",
+    "url": "/exmoto/static/css/main.affd3777.chunk.css"
   },
   {
     "revision": "5771f4f45f8e8e04df6f",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/exmoto/static/js/2.00fb5758.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90d9595b8e722a389da8",
+    "revision": "4ed54c90e087ee2bfe88",
     "url": "/exmoto/static/js/main.6265de97.chunk.js"
   },
   {
