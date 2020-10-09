@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea34771ef159b09815599ec8bff68814",
+    "revision": "734589b2c76f526b31b1026ae3ffbb60",
     "url": "/exmoto/index.html"
   },
   {
-    "revision": "37f5a3db6e769a92352c",
+    "revision": "6872900c47f050c87eec",
     "url": "/exmoto/static/css/main.268f0572.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/exmoto/static/js/2.00fb5758.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37f5a3db6e769a92352c",
-    "url": "/exmoto/static/js/main.a92d8f7a.chunk.js"
+    "revision": "6872900c47f050c87eec",
+    "url": "/exmoto/static/js/main.040dfeff.chunk.js"
   },
   {
     "revision": "562b7bd1c3b0d8952eef",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/exmoto/static/media/envelope.a093ba1f.svg"
   },
   {
-    "revision": "a5230cd6c333c579417d05e98cb2f3e7",
-    "url": "/exmoto/static/media/main-logo.a5230cd6.png"
+    "revision": "018d4590fb79b80e290ae67e125531b8",
+    "url": "/exmoto/static/media/new-main-logo.018d4590.png"
   },
   {
     "revision": "6d2646facc7afc37f49c79f30775ba15",

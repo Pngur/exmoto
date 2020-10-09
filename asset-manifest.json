@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/exmoto/static/css/main.268f0572.chunk.css",
-    "main.js": "/exmoto/static/js/main.a92d8f7a.chunk.js",
-    "main.js.map": "/exmoto/static/js/main.a92d8f7a.chunk.js.map",
+    "main.js": "/exmoto/static/js/main.040dfeff.chunk.js",
+    "main.js.map": "/exmoto/static/js/main.040dfeff.chunk.js.map",
     "runtime-main.js": "/exmoto/static/js/runtime-main.196dadfb.js",
     "runtime-main.js.map": "/exmoto/static/js/runtime-main.196dadfb.js.map",
     "static/js/2.00fb5758.chunk.js": "/exmoto/static/js/2.00fb5758.chunk.js",
     "static/js/2.00fb5758.chunk.js.map": "/exmoto/static/js/2.00fb5758.chunk.js.map",
     "index.html": "/exmoto/index.html",
-    "precache-manifest.55efb969868ef84fc079a40ab19b820e.js": "/exmoto/precache-manifest.55efb969868ef84fc079a40ab19b820e.js",
+    "precache-manifest.313869d9b9ade755181fc2f1a5a8d7ac.js": "/exmoto/precache-manifest.313869d9b9ade755181fc2f1a5a8d7ac.js",
     "service-worker.js": "/exmoto/service-worker.js",
     "static/css/main.268f0572.chunk.css.map": "/exmoto/static/css/main.268f0572.chunk.css.map",
     "static/js/2.00fb5758.chunk.js.LICENSE.txt": "/exmoto/static/js/2.00fb5758.chunk.js.LICENSE.txt",
@@ -17,7 +17,7 @@
     "static/media/checked.png": "/exmoto/static/media/checked.da188ccb.png",
     "static/media/curier.svg": "/exmoto/static/media/curier.4d1a5931.svg",
     "static/media/envelope.svg": "/exmoto/static/media/envelope.a093ba1f.svg",
-    "static/media/main-logo.png": "/exmoto/static/media/main-logo.a5230cd6.png",
+    "static/media/new-main-logo.png": "/exmoto/static/media/new-main-logo.018d4590.png",
     "static/media/Button.module.scss": "/exmoto/static/media/search.6d2646fa.svg",
     "static/media/truck.jpg": "/exmoto/static/media/truck.9e2e6db0.jpg"
   },
@@ -25,6 +25,6 @@
     "static/js/runtime-main.196dadfb.js",
     "static/js/2.00fb5758.chunk.js",
     "static/css/main.268f0572.chunk.css",
-    "static/js/main.a92d8f7a.chunk.js"
+    "static/js/main.040dfeff.chunk.js"
   ]
 }
