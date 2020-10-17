@@ -83,6 +83,7 @@ const AdminPanel = props => {
    });
    const searchInput = useRef(null);
    const authContext = useContext(AuthContext);
+   
    //  Отсеживание введенных значений в форме ПОИСКА накладной
    const handleSearchInputChange = e => {
       let value = e.target.value;
@@ -110,7 +111,7 @@ const AdminPanel = props => {
             for (let key of localStateKey) {
                result[key] = response.data.data.delivery[key];
                if (key === 'estimatedDeliveryDate') {
-                  result[key] = epochToDate(response.data.data.delivery[key])
+                  result[key] = epochToDate(response.data.data.delivery[key], '-');
                }
             }
             setSearchState(prevState => {

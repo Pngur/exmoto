@@ -1,4 +1,5 @@
 @import './../../../styles/colors.scss';
+@import './../../../styles/mixins.scss';
 
 .Form {
    display: flex;
@@ -25,6 +26,10 @@
       font-size: 1.3rem;
       transition: transform .2s;
       font-weight: 700;
+      @include respond(bp10) {
+         bottom: 5px;
+         font-size: 1rem;
+      }
 
       &__Active {
          visibility: visible;

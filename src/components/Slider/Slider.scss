@@ -1,6 +1,6 @@
-@import './../../../styles/colors.scss';
-@import './../../../styles/container.scss';
-@import './../../../styles/mixins.scss';
+@import './../../styles/colors.scss';
+@import './../../styles/container.scss';
+@import './../../styles/mixins.scss';
 
 .SliderImage {
    background-size: cover;
@@ -11,20 +11,24 @@
    border-radius: 1rem;
    position: relative;
 
+   @include respond(bp10) {
+      height: 40rem;
+      background-position-y: 0;
+      background-position: center;
+   }
+
    &__Box {
       max-width: 40%;
       padding: 8rem 0 0 5rem;
       @include respond(bp2) {
          max-width: 40%;
       }
-      
       @include respond(bp3) {
          text-align: center;
          max-width: 80%;
-         padding: 8rem 0 0 0rem;
+         padding: 6rem 0 0 0rem;
          margin: 0 auto;
       }
-      
    }
 
    &__Span {

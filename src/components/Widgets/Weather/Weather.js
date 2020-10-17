@@ -10,7 +10,7 @@ const Weather = props => (
          </div>
       </div>
       <div className="Weather-RightSide">
-         <img src={`http://openweathermap.org/img/wn/${props.weather.icon}.png`} className="Weather-RightSide__Icon" alt="weather icon "/>
+         <img src={`https://openweathermap.org/img/wn/${props.weather.icon}.png`} className="Weather-RightSide__Icon" alt="weather icon "/>
       </div>
    </div>
 );

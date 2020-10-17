@@ -10,12 +10,9 @@
 
 html {
   font-size: 62.5%;
-  // @include respond(bp7) {
-  //   font-size: 50%
-  // }
 }
 
-body,button,input {
+body,button,input,textarea {
   font-family: 'Roboto', sans-serif;
 }
 

@@ -24,7 +24,7 @@ const PricePage = () => {
             } ,             
          },
          currency: 'Лей',
-         weight: '2кг',
+         weight: '2',
          weightplus: '1',
          addNds: false
       },
@@ -47,8 +47,8 @@ const PricePage = () => {
             } ,             
          },
          currency: 'Лей',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: false
       },
       ukraine: {
@@ -66,19 +66,19 @@ const PricePage = () => {
                priceNds: '360',
                priceNoNds: '300',
                priceplus: '18',
-               delivery: '2/3 рабочих дня'
+               delivery: '2/3 '
             },             
             region: {
                city: 'Области',
                priceNoNds: '350',
                priceNds: '420',
                priceplus: '18',
-               delivery: '2/4 рабочих дня'
+               delivery: '2/4 '
             },             
          },
          currency: 'Лей',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: true
       },
       russia: {
@@ -107,8 +107,8 @@ const PricePage = () => {
             },             
          },
          currency: 'Лей',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: true
       },
       belarussia: {
@@ -119,7 +119,7 @@ const PricePage = () => {
                priceNoNds: '500',
                priceNds: '600',
                priceplus: '50',
-               delivery: '2/3'
+               delivery: '2/3 рабочих дня'
             } ,             
             bigcity: {
                city: 'Другие города',
@@ -131,8 +131,8 @@ const PricePage = () => {
              
          },
          currency: 'Лей',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: true
       },
       pribaltyka: {
@@ -161,8 +161,8 @@ const PricePage = () => {
             },                          
          },
          currency: '$',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: true,
          type: 'Страна'
       },
@@ -207,8 +207,8 @@ const PricePage = () => {
             },                          
          },
          currency: '$',
-         weight: '0,5кг',
-         weightplus: '0,5кг',
+         weight: '0,5',
+         weightplus: '0,5',
          addNds: true
       },
    });
@@ -232,6 +232,8 @@ const PricePage = () => {
          <div className="PricePage-Box"> 
             { allTables }
          </div>
+         <p className="PricePage__Hint">* Тарифы на международные отправки по странам ЕС и остального мира, запрашивайте у
+диспетчера.</p>
       </div>
    );
 };

@@ -24,7 +24,7 @@ const OrderBuilder = props => {
       displayErrorText: ''
    });
 
-   const inputRef = useRef(null);
+   const inputRef = useRef();
 
    const checkValidityHandler = event => {
       let value = event.target.value;
@@ -48,7 +48,6 @@ const OrderBuilder = props => {
    }
 
    const inputOnFocusHandler = () => {
-      inputRef.current.focus();
       setOrderState( prevState => {
          return {
             ...prevState,
@@ -58,8 +57,8 @@ const OrderBuilder = props => {
       });
    };
 
-   const orderHandler = event => {
-      event.preventDefault();
+   const orderHandler = e => {
+      e.preventDefault();
       let isFormValid = orderState.isValid;
       if (orderState.value === '') {
          isFormValid = false;
@@ -107,13 +106,13 @@ const OrderBuilder = props => {
             isValid={orderState.isValid}
             errText={orderState.displayErrorText}
             btnText='поиск'
-            btnStyle='Button__Green'
+            btnStyle='Button__GreenSearch'
             formStyle='FormBox'
          >
            <Input 
                elemtype='input'
                elemConfig={orderState.elemConfig}
-               inpStyle='Form-Input'
+               inpStyle='Search-Input'
                ref={inputRef}
                onChangeHandler={event => checkValidityHandler(event)}
                onBlurHandler={inputOnFocusHandler}

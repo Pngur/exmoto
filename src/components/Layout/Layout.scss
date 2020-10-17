@@ -1,7 +1,14 @@
 @import './../../styles/mixins.scss';
 .Main {
-   margin-top: 15rem;
+   position: relative;
+   margin-top: 16rem;
    @include respond(bp4) {
-      margin-top: 18rem;
+      margin-top: 13rem;
+   }
+
+   &__Price {
+      @include respond(bp11) {
+         display: none;
+      }
    }
 }

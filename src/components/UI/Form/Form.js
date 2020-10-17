@@ -8,7 +8,7 @@ const Form = props => {
       <form id={props.id} className={ props.column ? [styles.Form, styles.FormColumn].join(' ') : styles.Form} onSubmit={event => props.onSubmitHandler(event)}>  
          <div className={styles[props.formStyle]}>
             {props.children}
-            <p className={props.isValid ? styles.FormBox__Error :  [styles.FormBox__Error,
+            <p className={props.isValid ? styles.FormBox__Error : [styles.FormBox__Error,
                styles.FormBox__Error__Active].join(' ')}>
                {props.errText}
             </p>

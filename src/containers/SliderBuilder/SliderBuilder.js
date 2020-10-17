@@ -1,11 +1,11 @@
 import React, {useState ,useEffect, useRef,useCallback } from 'react';
-import './Slider.scss';
+import './SliderBuilder.scss';
 
-import {Box, Truck, B2b} from './../../assets/image';
-import SliderImage from './../../components/Main/SliderImage/SliderImage';
-import Dots from './../../components/UI/Dots/Dots';
+import {Box, Truck, B2b} from '../../assets/image';
+import Slider from '../../components/Slider/Slider';
+import Dots from '../../components/UI/Dots/Dots';
 
-const Slider = () => {
+const SliderBuilder = () => {
    const [position, setPosition] = useState({pSlide: 0});
    const [curSlide, setSlides] = useState({curSlide: 0, trans: true});
    const [contWidth, setcontWidth] = useState({
@@ -77,14 +77,14 @@ const Slider = () => {
       }
    }, []);
    // Рендерим слайды
-   const allslids = slids.map(slide => <SliderImage key={slide.id} bgimage={slide.img} heading={slide.heading} text={slide.text} percent={contWidth.fillPercent}/>);  
+   const allslids = slids.map(slide => <Slider key={slide.id} bgimage={slide.img} heading={slide.heading} text={slide.text} percent={contWidth.fillPercent}/>);  
    
    return (
       <div className="Container">
          <div className="Slider" >
             <div className="Slider-Box" onTransitionEnd={updateTransiotionHandler} ref={sliderWidth} style={{WebkitTransform: `translateX(${position.pSlide}px)`, transition: curSlide.trans ? "all 1s" : "none" }}>
                {allslids}
-               <SliderImage 
+               <Slider 
                   key='clone-slide'
                   bgimage={slids[0].img}
                   heading={slids[0].heading} 
@@ -102,4 +102,4 @@ const Slider = () => {
    );
 };
 
-export default Slider;
+export default SliderBuilder;

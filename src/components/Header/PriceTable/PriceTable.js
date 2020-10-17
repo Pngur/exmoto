@@ -17,9 +17,9 @@ const PriceTable = props => {
       <ul  className='Table__List'>
             <li  className="Table__Header-Row">
                   <div  className="Table__Header-Col Table__Header-Col--1">{props.country.type ? props.country.type : 'Город'}</div>
-                  {props.country.addNds ? <div  className="Table__Header-Col">{`Цена до ${props.country.weight} `}<br/>(Без НДС)</div> : null}
-                  <div  className="Table__Header-Col">{`Цена до ${props.country.weight}`} <br/>(C НДС)</div>
-                  <div className="Table__Header-Col">{`Цена  ${props.country.weight} + ${props.country.weightplus}`} </div>
+                  {props.country.addNds ? <div  className="Table__Header-Col">{`Цена до ${props.country.weight} кг `}<br/>(Без НДС)</div> : null}
+                  <div  className="Table__Header-Col">{`Цена до ${props.country.weight} кг`} <br/>(C НДС)</div>
+                  <div className="Table__Header-Col">{`+ ${props.country.weightplus}кг`} </div>
                   <div  className="Table__Header-Col">Сроки доставки</div>
             </li> 
             {allRows}

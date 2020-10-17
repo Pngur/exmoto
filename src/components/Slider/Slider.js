@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './SliderImage.scss';
+import './Slider.scss';
 
-const SliderImage = props => {
+const Slider = props => {
    return (
          <div className="SliderImage" style={{backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0.9) 
          ${props.percent}%, rgba(255,255,255, 1) ${'45%'}, transparent 10%), url(${props.bgimage})`}}>
@@ -15,5 +15,4 @@ const SliderImage = props => {
 
 }
 
-
-export default SliderImage;
+export default Slider;

@@ -18,7 +18,7 @@ const OrderSummary = props => (
          <div className="OrderSummary__Body-Col OrderSummary__Body-Col--1">{props.searchResult.trackingNumber}</div>
          <div className="OrderSummary__Body-Col">{props.searchResult.fromCountry},<br/>{props.searchResult.fromCity}</div>
          <div className="OrderSummary__Body-Col">{props.searchResult.toCountry},<br/> {props.searchResult.toCity}</div>
-         <div className="OrderSummary__Body-Col">{epochToDate(props.searchResult.estimatedDeliveryDate)}</div>
+         <div className="OrderSummary__Body-Col">{epochToDate(props.searchResult.estimatedDeliveryDate, '-')}</div>
          <div className="OrderSummary__Body-Col">{props.searchResult.delivered ? 'Доставлено' : 'В пути' }</div>
          {props.searchResult.recipient ? <div className="OrderSummary__Body-Col">{props.searchResult.recipient}</div> : null}
       </li> 

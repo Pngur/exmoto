@@ -23,6 +23,18 @@ const Input = forwardRef((props, ref) => {
             />
          </>
       break;
+      case('textarea'): fieldType =
+         <>
+            <label className="InvoiceForm__Label">{props.elemConfig.label}</label>
+            <textarea
+               className={styles.TextArea}
+               type={props.elemConfig.inpType} 
+               placeholder={props.elemConfig.placeholder} 
+               onChange={props.addChangeHandle  ? event => props.onChangeHandler(event) : null}
+               defaultValue={props.defaultValue}
+            />
+         </>
+      break;
       case('input-mask'): fieldType =
          <>
             <label className="InvoiceForm__Label">{props.elemConfig.label}</label>
@@ -41,6 +53,7 @@ const Input = forwardRef((props, ref) => {
             />
          </>
       break;
+ 
       case('select'): fieldType =
          <>
          <label className="InvoiceForm__Label">{props.elemConfig.label}</label>

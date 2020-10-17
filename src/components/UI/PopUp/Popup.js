@@ -4,7 +4,7 @@ import './Popup.scss';
 
 const Popup = props => (
     <div className="Popup">
-       <p className="Popup__Text">Накладная добавлена</p>
+       <p className="Popup__Text">{props.text}</p>
        <img src={checked} className="Popup__Icon" alt="checked"/>
     </div>
 );

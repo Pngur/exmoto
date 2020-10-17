@@ -4,9 +4,9 @@ export const getEpochTime = (date) => {
    return epochDate.getTime();
 };
 
-export const epochToDate = (epoch) => {        
+export const epochToDate = (epoch, separ) => {        
    const date = new Date(epoch);
-   return `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+   return `${date.getDate()}${separ}${date.getMonth() + 1}${separ}${date.getFullYear()}`;
 }
 
 // Конфигурация Input
@@ -20,3 +20,8 @@ export const createInputConfig = (elemType, inpType, label, placeholder, disable
       placeholder: placeholder,
    }
 });
+
+// Оставляет 2 цифры после запятой
+export const fixNumber = nmb => {
+   return Math.floor(nmb * 100) / 100;
+};

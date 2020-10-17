@@ -16,7 +16,6 @@ const App = () => {
     req.headers.Authorization = `Bearer ${token}`;
     return req;
   });
-
   const authContext = useContext(AuthContext); 
   const token = sessionStorage.getItem('access__token');   
   let authAdmin = <Auth/> ;
@@ -26,7 +25,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Switch>
-          <Route  path="/operator" component={Layout}>
+          <Route  path="/operator" >
             {authAdmin}
           </Route>
           <Route path="/" component={Layout}/>
