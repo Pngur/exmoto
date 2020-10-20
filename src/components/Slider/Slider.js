@@ -4,7 +4,7 @@ import './Slider.scss';
 
 const Slider = props => {
    return (
-         <div className="SliderImage" style={{backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0.9) 
+         <div id={props.id}  className="SliderImage" style={{backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0.9) 
          ${props.percent}%, rgba(255,255,255, 1) ${'45%'}, transparent 10%), url(${props.bgimage})`}}>
             <div className="SliderImage__Box">
                <h2 className="SliderImage__Heading">{props.heading}</h2>
@@ -12,7 +12,6 @@ const Slider = props => {
             </div>
          </div>
       );
-
-}
+};
 
 export default Slider;

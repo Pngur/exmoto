@@ -12,9 +12,9 @@ const Footer = () => (
                <h3 className="Footer__Header">Контакты:</h3>
                <div className="Footer-Box__Info-Box">
                   <ul className="Footer-Box__List">
-                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">373 79 565004</a></li>
-                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">373 68 200884</a></li>
-                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">373 22 284761</a></li>
+                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">+373 79 565004</a></li>
+                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">+373 68 200884</a></li>
+                     <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">+373 22 284761</a></li>
                   </ul>
                   <ul className="Footer-Box__List Footer-Box__List--2 ">
                   <li className="Footer-Box__List"><a className="Footer-Box__Link" href="tel:">kiv@exmoto.com</a></li>
