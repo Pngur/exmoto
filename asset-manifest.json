@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/exmoto/static/css/main.6e38d891.chunk.css",
-    "main.js": "/exmoto/static/js/main.626e1d72.chunk.js",
-    "main.js.map": "/exmoto/static/js/main.626e1d72.chunk.js.map",
+    "main.css": "/exmoto/static/css/main.a0aad0d8.chunk.css",
+    "main.js": "/exmoto/static/js/main.38aa8a58.chunk.js",
+    "main.js.map": "/exmoto/static/js/main.38aa8a58.chunk.js.map",
     "runtime-main.js": "/exmoto/static/js/runtime-main.196dadfb.js",
     "runtime-main.js.map": "/exmoto/static/js/runtime-main.196dadfb.js.map",
     "static/js/2.2160fb5b.chunk.js": "/exmoto/static/js/2.2160fb5b.chunk.js",
     "static/js/2.2160fb5b.chunk.js.map": "/exmoto/static/js/2.2160fb5b.chunk.js.map",
     "index.html": "/exmoto/index.html",
-    "precache-manifest.9702d6c9b12754037d146a1ac7ffd456.js": "/exmoto/precache-manifest.9702d6c9b12754037d146a1ac7ffd456.js",
+    "precache-manifest.fcaa540194bd812218379852c0cda434.js": "/exmoto/precache-manifest.fcaa540194bd812218379852c0cda434.js",
     "service-worker.js": "/exmoto/service-worker.js",
-    "static/css/main.6e38d891.chunk.css.map": "/exmoto/static/css/main.6e38d891.chunk.css.map",
+    "static/css/main.a0aad0d8.chunk.css.map": "/exmoto/static/css/main.a0aad0d8.chunk.css.map",
     "static/js/2.2160fb5b.chunk.js.LICENSE.txt": "/exmoto/static/js/2.2160fb5b.chunk.js.LICENSE.txt",
     "static/media/b2b.jpg": "/exmoto/static/media/b2b.39db7eb1.jpg",
     "static/media/box.jpg": "/exmoto/static/media/box.0e601bd8.jpg",
     "static/media/checked.png": "/exmoto/static/media/checked.da188ccb.png",
     "static/media/curier.svg": "/exmoto/static/media/curier.4d1a5931.svg",
     "static/media/envelope.svg": "/exmoto/static/media/envelope.a093ba1f.svg",
+    "static/media/logo-ariix.png": "/exmoto/static/media/logo-ariix.157718e3.png",
     "static/media/new-main-logo.png": "/exmoto/static/media/new-main-logo.018d4590.png",
     "static/media/Button.module.scss": "/exmoto/static/media/search.6d2646fa.svg",
     "static/media/truck.jpg": "/exmoto/static/media/truck.9e2e6db0.jpg"
@@ -24,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.196dadfb.js",
     "static/js/2.2160fb5b.chunk.js",
-    "static/css/main.6e38d891.chunk.css",
-    "static/js/main.626e1d72.chunk.js"
+    "static/css/main.a0aad0d8.chunk.css",
+    "static/js/main.38aa8a58.chunk.js"
   ]
 }

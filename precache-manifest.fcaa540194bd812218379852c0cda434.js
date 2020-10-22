@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc68391ceebe40388c00eee9b502c675",
+    "revision": "30a4faf18c1269c42dbb089e91eb729c",
     "url": "/exmoto/index.html"
   },
   {
-    "revision": "ee68a81d6e4994d0e7b5",
-    "url": "/exmoto/static/css/main.6e38d891.chunk.css"
+    "revision": "a146c671ef28a2acee7d",
+    "url": "/exmoto/static/css/main.a0aad0d8.chunk.css"
   },
   {
     "revision": "c126795d13636f35d3a4",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/exmoto/static/js/2.2160fb5b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee68a81d6e4994d0e7b5",
-    "url": "/exmoto/static/js/main.626e1d72.chunk.js"
+    "revision": "a146c671ef28a2acee7d",
+    "url": "/exmoto/static/js/main.38aa8a58.chunk.js"
   },
   {
     "revision": "562b7bd1c3b0d8952eef",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a093ba1ff6fa448dc1053eebdfcac458",
     "url": "/exmoto/static/media/envelope.a093ba1f.svg"
+  },
+  {
+    "revision": "157718e3fc3885e39de8d9cd33c251ce",
+    "url": "/exmoto/static/media/logo-ariix.157718e3.png"
   },
   {
     "revision": "018d4590fb79b80e290ae67e125531b8",
